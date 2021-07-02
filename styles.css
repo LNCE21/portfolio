@@ -1,0 +1,56 @@
+
+section {
+    height: 500px;
+    background-color: rgb(236, 236, 236);
+    border: solid black 1px;
+    
+
+}
+
+.hero{
+    background-color: #1c1d25; /*This class is inside a section so we inherited the height */
+    height: 100vh; /*Viewport height 100 stands for 100% the viewport height*/
+    color: white;
+    font-size: 40px;
+}
+
+nav{
+    display: flex; /*Because i want that the elements appear on one line rather than stack*/
+    justify-content: space-between; /*For separate the logo (on the left) and the rest (on the right)*/
+
+}
+
+ul{
+    display: flex;
+    list-style-type: none; /*To get rid of the bullet points of the links (home-about etc)*/
+    width: 500px;
+    justify-content: space-evenly; /*Space evenly = Same spacing before, between and after the elements/ Space around= Half space before and after, and in between the same space*/
+    font-size: 25px;
+}
+
+li{
+    text-decoration: none; /*To get rid of the underlining of the links (home-about etc)*/
+}
+
+.hero-name{                  /*This class is to style both h1 (my name) and p (front-end developer) tag of the hero section*/
+    margin-left: 35px;
+}
+.button{
+    font-size: 30px;
+    width: 111px;
+    height: 43px;
+    background-color: grey; 
+    border-radius: 7px;        /*So the button is not a straight rectangle*/
+    text-align: center;        /*To center horizontally the word "resume" inside the button*/
+    display: table-cell;       /*To allow the vertical align property.*/ 
+    vertical-align: middle;    /*This works with table cells. That's the reason of the previous line*/
+}
+
+h1{
+    font-size: 80px;
+}
+
+footer{
+    height: 500px;
+    background-color: black;
+}
