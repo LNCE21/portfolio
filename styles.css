@@ -47,16 +47,14 @@ li{
 .hero-main{
     display: flex;       /*Flex so it can adapt to different heights*/ 
     flex-direction: column;  /*So it turns it to a vertical layout*/
-    height: 100%;           
-    justify-content: center; /*This is to center vertically but, to make it a litle bit higher we add a margin*/
-    padding-bottom: 550px;
+    height: 90%;     
+    justify-content: space-between; /*This is to center vertically but, to make it a litle bit higher we add a margin*/
 }
 .hero-name{                  /*This class is to style both h1 (my name) and p (front-end developer) tag of the hero section*/
     margin-right: 35px;
-    margin-top: 50px;
     margin-left: 35px;
-    margin-bottom: 350px;
 }
+
 .button{
     font-size: 30px;
     width: 111px;
@@ -86,13 +84,11 @@ li{
 
 h1{
     font-size: 80px;
-    margin-bottom: 10px;
 }
 
 p{
     font-size: 30px;
-    margin-top: 40px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     font-weight: 450;
 }
 
@@ -100,7 +96,8 @@ p{
     display: flex;
     gap: 20px;
     font-size: 30px;
-    padding-top: 50px;
+    margin-left: 35px;
+    margin-bottom: 35px;
 }
 footer{
     height: 500px;
