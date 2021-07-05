@@ -3,16 +3,19 @@
     
     <head>
         <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Lautaro Clerici Erhardt</title>      <!--This will only be visible on the browser tab-->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!--The X-UA-Compatible meta tag allows web authors to choose what version of Internet Explorer the page should be rendered as-->
         <link rel="stylesheet" href="styles.css">   <!--Links and specifies the relationship between this document and the external resource (which is mentioned with href attribute)-->
+        <link rel="preconnect" href="https://fonts.googleapis.com"> <!--This and the next 2 lines are a link which reference the poppins font from google-->
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+        <title>Lautaro Clerici Erhardt</title>      <!--This will only be visible on the browser tab-->
     </head>
     
     <body>
 
         <section class="hero"> <!--Hero section is tipically a full screen section at the top of your homepage layout. Can include: images, video, illustrationes, animations, text. Has the objective to capture attention.-->
             <nav>
-                <div class="logo">LOGO</div>
+                <div class="logo">Logo</div>
                 <ul>
                     <li>Home</li>
                     <li>About</li>
@@ -20,11 +23,19 @@
                     <li>Contact</li>
                 </ul>
             </nav>
-            <div class="hero-name"> <!--This div is here so i can separate and style them together-->
-                <h1>Lautaro Nicolas Clerici Erhardt</h1>
-                <p>Front-End Developer</p>
-                <div class="button">Resume</div> <!--I don't use a button tag because it comes pre-styled-->
-            </div>
+            
+            <div class="hero-main"> <!--With this class i can center the "hero-name" within this "hero-main" area, but without touching the nav-->
+                <div class="hero-name"> <!--This div is here so i can separate and style them together-->
+                    <h1>Lautaro Nicolas Clerici Erhardt</h1>
+                    <p>Front-End Developer</p>
+                    <div class="button">Resume</div> <!--I don't use a button tag because it comes pre-styled-->  
+                    <div class="social_media">
+                        <div class="linkedin">LI</div>
+                        <div class="github">GH</div>
+                    </div>
+                </div>
+
+            </div>    
         </section>
         
         
