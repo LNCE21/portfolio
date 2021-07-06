@@ -27,7 +27,9 @@ nav{
 .logo{
     color: white;
     font-size: 25px;
-    margin-top: 20px; /*To match the margin top of the li items, those have space evenly, that's why have spacing on the top*/
+    margin-top: 15px; /*To match the margin top of the li items, those have space evenly, that's why have spacing on the top*/
+    height: 50px;
+    width: 50px;
 }
 
 ul{
@@ -48,16 +50,21 @@ li{
     display: flex;       /*Flex so it can adapt to different heights*/ 
     flex-direction: column;  /*So it turns it to a vertical layout*/
     height: 90%;     
-    justify-content: space-between; /*This is to center vertically but, to make it a litle bit higher we add a margin*/
+    justify-content: space-between; /*This is to separate them but, to make the a litle bit lower we add a margin*/
 }
 .hero-name{                  /*This class is to style both h1 (my name) and p (front-end developer) tag of the hero section*/
+    margin-top: 120px;
     margin-right: 35px;
     margin-left: 35px;
 }
-
-.button{
+.buttons{
+    display: flex;
+    gap: 25px;
+    margin-left: 35px;
+}
+.resume_button{
     font-size: 30px;
-    width: 111px;
+    width: 120px;
     height: 43px;
     background-color:#8EE3C8; 
     border-radius: 7px;        /*So the button is not a straight rectangle*/
@@ -66,20 +73,20 @@ li{
     vertical-align: middle; 
     color: #1c1d25;   /*This works with table cells. That's the reason of the previous line*/
     padding-left: 5px;
-    padding-right: 5px;
+    padding-right: 5px; 
     position: relative; /*Respect normal flow, and accepts T/L/R/B to position*/
     cursor: pointer;    /*When it is hover, it changes the cursor to indicate its clickable*/
     user-select: none;  /*This is so the user can't accidently select the text of a button insted of just clicking it*/
 }
-.button:hover{         /*This pseudo class selects the state of a selector, in this case for hover effect's purpose*/   
-    background-color:hsla(217, 45%, 60%, 0.522); 
+.resume_button:hover{         /*This pseudo class selects the state of a selector, in this case for hover effect's purpose*/   
+    background-color:#58595c; 
     color: #8EE3C8;
     transition: all 450ms ease-out;
 }
-.button:active{         /*This pseudo class selects the state of a selector. In this case is for when gets clicked*/   
+.resume_button:active{         /*This pseudo class selects the state of a selector. In this case is for when gets clicked*/   
     background: #1c1d25;
     color: #8EE3C8;
-    font-size: 28px;    /*This will generate the feeling its being pressed*/
+    font-size: 27px;    /*This will generate the feeling its being pressed*/
 }
 
 h1{
@@ -94,11 +101,42 @@ p{
 
 .social_media{
     display: flex;
-    gap: 20px;
+    gap: 24px;
     font-size: 30px;
-    margin-left: 35px;
     margin-bottom: 35px;
 }
+
+.linkedin{
+    height: 33px;
+    background-color: #8EE3C8;
+    border-radius: 7px;
+    padding: 5px;
+    fill: cyan;
+}
+.linkedin:hover{         /*This pseudo class selects the state of a selector, in this case for hover effect's purpose*/   
+    background-color:#fafafac5; 
+    transition: all 450ms ease-out;
+}
+.linkedin:active{         /*This pseudo class selects the state of a selector. In this case is for when gets clicked*/   
+    background: #8EE3C8;
+    height: 27px;    /*This will generate the feeling its being pressed*/
+}
+
+.github{
+    height: 33px;
+    background-color: #8EE3C8;
+    border-radius: 7px;
+    padding: 5px;
+}
+.github:hover{         /*This pseudo class selects the state of a selector, in this case for hover effect's purpose*/   
+    background-color:#fafafac5; 
+    transition: all 450ms ease-out;
+}
+.github:active{         /*This pseudo class selects the state of a selector. In this case is for when gets clicked*/   
+    background: #8EE3C8;
+    height: 27px;    /*This will generate the feeling its being pressed*/
+}
+
 footer{
     height: 500px;
     background-color: black;
