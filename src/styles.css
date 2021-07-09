@@ -41,7 +41,7 @@ ul{
 }
 
 li{
-    text-decoration: none; /*To get rid of the underlining of the links (home-about etc)*/
+    text-decoration: none;  /*To get rid of the underlining of the links (home-about etc)*/
     cursor: pointer;
     user-select: none;  /*This is so the user can't accidently select the text of a button insted of just clicking it*/
 }
