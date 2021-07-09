@@ -1,9 +1,10 @@
 body{
     font-family: 'Poppins', sans-serif; /*Poppins is a google font linked on the index.html, and sans-serif is a backup font*/
+    background-color: #1c1d25;
 }
 section {
     height: 500px;
-    background-color: rgb(236, 236, 236);
+    background-color: #ececec;
     border: solid black 1px;
     
 
@@ -135,6 +136,25 @@ p{
 .github:active{         /*This pseudo class selects the state of a selector. In this case is for when gets clicked*/   
     background: #8EE3C8;
     height: 27px;    /*This will generate the feeling its being pressed*/
+}
+
+.sub-section{
+    display: flex;
+    font-size: 15px;
+    
+}
+
+h2{
+    font-size: 30px;
+}
+
+.about{
+    margin-left: 35px;
+}
+
+.about-img{
+    height: 250px;
+    width: 250;
 }
 
 footer{
