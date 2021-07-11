@@ -3,7 +3,7 @@ body{
     background-color: #1c1d25;
 }
 section {
-    background-color: #ecfbfd;
+    background-color: hsla(188, 80%, 96%, 0.904);
 }
 
 .hero{
@@ -47,7 +47,7 @@ li{
     display: flex;       /*Flex so it can adapt to different heights*/ 
     flex-direction: column;  /*So it turns it to a vertical layout*/
     justify-content: center; /*This is to separate them but, to make the a litle bit lower we add a margin*/
-    height: 94vh;    
+    height: 94vh; 
 }
 .hero-name{                  /*This class is to style both h1 (my name) and p (front-end developer) tag of the hero section*/
     padding-bottom: 100px;
@@ -58,6 +58,7 @@ li{
     display: flex;
     gap: 25px;
     padding-left: 35px;
+    padding-bottom: 200px;
 }
 .resume-button{
     font-size: 30px;
