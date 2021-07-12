@@ -200,13 +200,22 @@ h2{
 .project-column{       /*I want to make even columns*/
     display: flex;      /*As default, elements will shrink as much as they can*/
     justify-content: center;
-    gap: 5em;
+    gap: 2em;
 }
 .project-card{
-    width: 400px;
-    height: 550px;
-    background-color: cyan;
+    width: 150px;
+    height: 250px;
+    background-color: rgb(241, 240, 240);
+    padding: 80px;
+    box-shadow: 5px 5px 10px;
+    border-radius: 5px;
+}
 
+.project-description{
+    font-size: 15px;
+    font-weight: 250;
+    margin: 0px;
+    padding: 0px;
 }
 
 footer{
