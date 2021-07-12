@@ -6,7 +6,7 @@ section {
     background-color: hsla(188, 80%, 96%, 0.904);
 }
 
-.hero{
+#hero{
     background-color: #1c1d25; /* This class is inside a section so we inherited the height */
     height: 100vh; /*Viewport height 100 stands for 100% the viewport height*/
     color: white;
@@ -38,7 +38,6 @@ ul{
 }
 
 li{
-    text-decoration: none;  /*To get rid of the underlining of the links (home-about etc)*/
     cursor: pointer;
     user-select: none;  /*This is so the user can't accidently select the text of a button insted of just clicking it*/
 }
@@ -140,7 +139,7 @@ p{
     background: #8EE3C8;
     height: 27px;    /*This will generate the feeling its being pressed*/
 }
-.about-section{
+#about-section{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -191,7 +190,7 @@ h2{
 }
 
 
-.project-section{
+#project-section{
     display:flex;
     flex-direction: column;
     gap: 70px;
@@ -200,24 +199,56 @@ h2{
 .project-column{       /*I want to make even columns*/
     display: flex;      /*As default, elements will shrink as much as they can*/
     justify-content: center;
-    gap: 2em;
+    gap: 12em;
 }
 .project-card{
-    width: 150px;
-    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 280px;
+    height: 480px;
     background-color: rgb(241, 240, 240);
-    padding: 80px;
+    padding: 15px;
     box-shadow: 5px 5px 10px;
     border-radius: 5px;
+    margin: 10px;
 }
 
 .project-description{
-    font-size: 15px;
+    align-self: center;
+    font-size: 18px;
     font-weight: 250;
+    margin-left: 10px;
+    padding: 5px;
+}
+.project-img{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
     margin: 0px;
     padding: 0px;
 }
-
+hr{
+    color: black;
+    width: 75%;
+}
+a{
+    text-decoration: none;  /*To get rid of the underlining of the links (home-about etc)*/
+    color: #8EE3C8;
+}
+.project-link{
+    color: black;
+    padding: 5px;
+    background-color: #8EE3C8;
+    border-radius: 7px;        /*So the button is not a straight rectangle*/
+    text-align: center;        /*To center horizontally the word "resume" inside the button*/
+    display: table-cell;       /*To allow the vertical align property.*/ 
+    vertical-align: middle; 
+    color: #1c1d25;   /*This works with table cells. That's the reason of the previous line*/
+    padding-left: 5px;
+    padding-right: 5px; 
+}
 footer{
     height: 500px;
     background-color: black;

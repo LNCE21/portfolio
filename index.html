@@ -13,14 +13,14 @@
     
     <body>
 
-        <section class="hero"> <!--Hero section is tipically a full screen section at the top of your homepage layout. Can include: images, video, illustrationes, animations, text. Has the objective to capture attention.-->
+        <section id="hero"> <!--Hero section is tipically a full screen section at the top of your homepage layout. Can include: images, video, illustrationes, animations, text. Has the objective to capture attention.-->
             <nav>
                 <img class="logo" src="src/images/resume.png" alt="Personal Logo"> 
                 <ul>
-                    <li>Home</li>
-                    <li><a href="#about">About</a></li> 
-                    <li>Projects</li>
-                    <li>Contact</li>
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#about-section">About</a></li> 
+                    <li><a href="#project-section">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
             
@@ -39,7 +39,7 @@
             </div> 
         </section>
             
-        <section class="about-section">
+        <section id="about-section">
             <div class="title"><h2>About</h2></div>
             <div class="about-main">
                 <div class="about-text">
@@ -56,41 +56,31 @@
             
         </section>
 
-        <section class="project-section">
+        <section id="project-section">
             <div class="title"><h2>Projects</h2></div>
             <div class="project-column">
                 <div class="project-card">
-                    <img class="project-img" src="" alt="Project 1">
+                    <img class="project-img" src="src/images/project-1.jpg" alt="Project 1">
                     <h3>Project 1</h3>
-                    <p class="project-description">Stack used: Html, CSS and Javascript</p>
+                    <p class="project-description">Tribute Page made for my responsive web design certificate.</p>
                     <hr/>
-                    <p class="project-description">View More</p>
+                    <p class="project-description"><a class="project-link" target="_blank" href="https://github.com/LNCE21">View More</a></p>
                 </div>
                 <div class="project-card">
-                    <img class="project-img" src="" alt="Project 2">
+                    <img class="project-img" src="src/images/project-2.jpg" alt="Project 2">
                     <h3>Project 2</h3>
-                    <p class="project-description">Stack used: Html, CSS and Javascript</p>
+                    <p class="project-description">Landing page made for my responsive web design certificate.</p>
                     <hr/>
-                    <p class="project-description">View More</p>
+                    <p class="project-description"><a class="project-link" target="_blank" href="https://github.com/LNCE21">View More</a></p>
                 </div>
-                <div class="project-card">
-                    <img class="project-img" src="" alt="Project 3">
-                    <h3>Project 3</h3>
-                    <p class="project-description">Stack used: Html, CSS and Javascript</p>
-                    <hr/>
-                    <p class="project-description">View More</p>
-                </div>
-                <div class="project-card">
-                    <img class="project-img" src="" alt="Project 4">
-                    <h3>Project 4</h3>
-                    <p class="project-description">Stack used: Html, CSS and Javascript</p>
-                    <hr/>
-                    <p class="project-description">View More</p>
+
                 </div>
             </div>
         </section>
         
-        <section></section>
+        <section id="contact">
+            <div>Contact</div>
+        </section>
 
 
 
