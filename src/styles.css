@@ -47,17 +47,19 @@ li{
     display: flex;       /*Flex so it can adapt to different heights*/ 
     flex-direction: column;  /*So it turns it to a vertical layout*/
     justify-content: center; /*This is to separate them but, to make the a litle bit lower we add a margin*/
+    align-items: flex-start;
     height: 94vh; 
-}
-.hero-name{                  /*This class is to style both h1 (my name) and p (front-end developer) tag of the hero section*/
-    padding-bottom: 100px;
-    padding-right: 35px;
     padding-left: 35px;
 }
+.hero-name{                  /*This class is to style both h1 (my name) and p (front-end developer) tag of the hero section*/
+    padding-bottom: 0px;
+    padding-right: 35px;
+}
+
 .buttons{
     display: flex;
     gap: 25px;
-    padding-left: 35px;
+    padding-top: 20px;
     padding-bottom: 200px;
 }
 .resume-button{
@@ -89,11 +91,14 @@ li{
 
 h1{
     font-size: 80px;
+    margin-bottom: 0px;
 }
 
 p{
     font-size: 30px;
     font-weight: 450;
+    margin-top: 0px;
+    padding-top: 60px;
 }
 
 .social-media{
@@ -134,24 +139,31 @@ p{
 }
 .about-section{
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: flex-start;
     padding: 35px 35px 20px 35px;
-    gap: 70px;
 }
-
+.about-main{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-top: 0px;
+    gap: 10px;
+}
 .about-text{
     font-size: 8rem;
-    display: flex;
-    flex-direction: column;
-    align-items:flex-start;
     color: #1f1f1fc4;
+    width: 200vw;
 }
 h2{
     color: rgb(255, 255, 255);
     padding: 2px 10px;
     border-radius: 10px;
     background-color: #1f1f1f6e;
-    
+    font-size: 2.4rem;
+    margin-bottom: 0px;
+    align-self: flex-start;
 }
 .about-img-container{
     display: flex;
@@ -159,11 +171,10 @@ h2{
     justify-content: center;
     align-items: center;
     height: auto;
-    width: 350px;
+    width: 50vw;
     padding-left: 10px;
     padding-right: 10px;
-    padding-bottom: 20px;
-    padding-top: 90px;
+    padding-top: 6vh;
 }
 
 .about-img{
@@ -172,9 +183,18 @@ h2{
     border-radius: 5%;
     margin-bottom: 20px;
 }
-h2 {
-    font-size: 2.4rem;
-    margin-bottom: 0px;
+.column{
+    width: 20vw;
+    margin: 1rem;
+    padding: 1em;
+}
+.project-section{
+    display:flex;
+    flex-direction: column;
+}
+.even-columns{       /*I want to make even columns*/
+    display: flex;      /*As default, elements will shrink as much as they can*/
+    
 }
 
 footer{
