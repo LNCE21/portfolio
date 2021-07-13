@@ -229,6 +229,13 @@ h2{
     margin: 0px;
     padding: 0px;
 }
+.project-img-1{
+    width: 245px;
+    height: 223px;
+    border-radius: 50%;
+    margin: 0px;
+    padding: 0px;
+}
 hr{
     color: black;
     width: 75%;
@@ -250,13 +257,27 @@ a{
     padding-right: 5px; 
 }
 footer{
-    height: auto;
+    height: 24em;
     background-color: black;
     color: white;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;  
     padding-top: 20px;
-    gap: 50px;
+    gap: 0px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+.socials-buttons{
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    padding-top: 25px;
+    padding-bottom: 0px;
+}
+.socials-footer{
+    display: flex;
+    gap: 24px;
+    font-size: 30px;
 }
