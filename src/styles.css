@@ -194,7 +194,7 @@ h2{
     display:flex;
     flex-direction: column;
     gap: 70px;
-    padding: 35px 35px 20px 35px;
+    padding: 35px 35px 100px 35px;
 }
 .project-column{       /*I want to make even columns*/
     display: flex;      /*As default, elements will shrink as much as they can*/
@@ -208,10 +208,10 @@ h2{
     align-items: center;
     width: 280px;
     height: 480px;
-    background-color: rgb(241, 240, 240);
+    background-color: rgb(255, 255, 255);
     padding: 15px;
     box-shadow: 5px 5px 10px;
-    border-radius: 5px;
+    border-radius: 10px;
     margin: 10px;
 }
 
@@ -250,6 +250,13 @@ a{
     padding-right: 5px; 
 }
 footer{
-    height: 500px;
+    height: auto;
     background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;  
+    padding-top: 20px;
+    gap: 50px;
 }
