@@ -54,9 +54,21 @@ li{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-bottom: 0px;
 }
-
+h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    line-height: 0.5em;
+    margin-bottom: 0px;
+}
+.my-name{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.7em;
+}
 .buttons{
     display: flex;
     justify-content: center;
@@ -89,11 +101,6 @@ li{
     background: #1c1d25;
     color: #8EE3C8;
     font-size: 27px;    /*This will generate the feeling its being pressed*/
-}
-
-h1{
-    font-size: 2em;
-    margin-bottom: 0px;
 }
 
 p{
@@ -201,6 +208,45 @@ h2{
     justify-content: center;
     gap: 12em;
 }
+
+@media only screen and (max-width:1000px) { /*Anything equal or bellow 1000px will have the following styling*/
+    h1{
+        font-size: 1.8em;
+        line-height: 0.5em;
+        margin-bottom: 0px;
+        text-transform: uppercase;
+    }
+    .my-name{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 0.5em;
+        padding-bottom: 1.5em;
+    }
+    .about-main{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .about-img-container{
+        display: none;
+    }
+    .about-text{
+        font-size: 8rem;
+        color: #1f1f1fc4;
+        width: auto;
+    }
+    .project-column{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+}
+
+
 .project-card{
     display: flex;
     flex-direction: column;
@@ -281,3 +327,4 @@ footer{
     gap: 24px;
     font-size: 30px;
 }
+
