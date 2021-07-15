@@ -8,6 +8,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com"> <!--This and the next 2 lines are a link which reference the poppins font from google-->
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/dfb62189b7.js" crossorigin="anonymous"></script>
         <title>Lautaro Clerici Erhardt</title>      <!--This will only be visible on the browser tab-->
     </head>
     
@@ -16,12 +17,15 @@
         <section id="hero"> <!--Hero section is tipically a full screen section at the top of your homepage layout. Can include: images, video, illustrationes, animations, text. Has the objective to capture attention.-->
             <nav>
                 <img class="logo" src="src/images/resume.png" alt="Personal Logo"> 
-                <ul>
+                <ul id="nav-list">
                     <!--<li><a href="#hero">Home</a></li>-->
                     <li><a href="#about-section">About</a></li> 
                     <li><a href="#project-section">Projects</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
+                <button class="hamburger" id="hamburger">
+                    <i class="fas fa-bars"></i>
+                </button>
             </nav>
             
             <div class="hero-main"> <!--With this class i can center the "hero-name" within this "hero-main" area, but without touching the nav-->

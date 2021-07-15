@@ -36,10 +36,16 @@ ul{
     justify-content: space-evenly; /*Space evenly = Same spacing before, between and after the elements/ Space around= Half space before and after, and in between the same space*/
     font-size: 0.74em;
 }
+ul.show{
+    display: block;
+}
 
 li{
     cursor: pointer;
     user-select: none;  /*This is so the user can't accidently select the text of a button insted of just clicking it*/
+}
+.hamburger{
+    display: none;
 }
 
 .hero-main{
@@ -299,7 +305,7 @@ footer{
         font-size: 1.8em;
         line-height: 0.8em;
         margin-bottom: 0px;
-        text-transform:uppercase;
+        text-transform: uppercase;
         font-weight: 550;
     }
     .my-name{
@@ -342,6 +348,48 @@ footer{
         height: 33em;
     }
     ul{
+        display: none;
+        background-color:#2f313c00;
+        margin: 0px;
+        align-self: center;
+    }
+    ul.show{
+        display: block;
+    }
+
+    nav{
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        background-color: #2f313c6e;
+        border-radius: 0.2em;
+        font-size: 1.2em;
+        height: auto;
+    }
+    li{
+        float: left;
+        padding-left: 0.61em;
+        padding-top: 0.2em;
+    }
+
+    .hamburger{
+        display: block;
+        float: right;
+        border: 0;
+        background-color: transparent;
+        color: #8EE3C8;
         font-size: 0.9em;
+        padding-bottom: 0.5em;
+        
+        
+    }
+    .hamburger:focus{
+        outline: 0;
+    }
+    .logo{
+        display: none;
+    }
+    i{
+        padding-top: 1em;
     }
 }
