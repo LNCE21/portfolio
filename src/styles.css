@@ -150,14 +150,13 @@ p{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    padding: 35px 35px 20px 35px;
+    padding: 35px 35px 10px 35px;
 }
 .about-main{
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: flex-start;
-    margin-top: 0px;
 }
 .about-text{
     font-size: 8rem;
@@ -200,13 +199,15 @@ h2{
 #project-section{
     display:flex;
     flex-direction: column;
-    gap: 70px;
-    padding: 35px 35px 100px 35px;
+    justify-content: flex-start;
+    padding: 20px 35px 100px 35px;
 }
 .project-column{       /*I want to make even columns*/
     display: flex;      /*As default, elements will shrink as much as they can*/
-    justify-content: center;
-    gap: 12em;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    padding-top: 3.5em;
 }
 
 @media only screen and (max-width:1000px) { /*Anything equal or bellow 1000px will have the following styling*/
@@ -240,8 +241,10 @@ h2{
     }
     .project-column{
         display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 3.5em;
     }
 }
 
