@@ -34,7 +34,7 @@ ul{
     list-style-type: none; /*To get rid of the bullet points of the links (home-about etc)*/
     width: 500px;
     justify-content: space-evenly; /*Space evenly = Same spacing before, between and after the elements/ Space around= Half space before and after, and in between the same space*/
-    font-size: 25px;
+    font-size: 0.74em;
 }
 
 li{
@@ -54,20 +54,22 @@ li{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 0.6em;
 }
 h1{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 2em;
-    line-height: 0.5em;
-    margin-bottom: 0px;
+    font-family: 'Poppins', sans-serif ;
+    font-size: 2.15em;
 }
 .my-name{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 0.7em;
+    gap: 0.9em;
+}
+.work-area{
+    font-size: 1.3em;
+    font-weight: 450;
+    padding-bottom: 0.8em;
 }
 .buttons{
     display: flex;
@@ -86,8 +88,7 @@ h1{
     display: table-cell;       /*To allow the vertical align property.*/ 
     vertical-align: middle; 
     color: #1c1d25;   /*This works with table cells. That's the reason of the previous line*/
-    padding-left: 5px;
-    padding-right: 5px; 
+    padding: 0.07em;
     position: relative; /*Respect normal flow, and accepts T/L/R/B to position*/
     cursor: pointer;    /*When it is hover, it changes the cursor to indicate its clickable*/
     user-select: none;  /*This is so the user can't accidently select the text of a button insted of just clicking it*/
@@ -117,10 +118,10 @@ p{
 }
 
 .linkedin{
-    height: 33px;
+    height: 34px;
     background-color: #8EE3C8;
     border-radius: 7px;
-    padding: 5px;
+    padding: 0.25em;
     fill: cyan;
 }
 .linkedin:hover{         /*This pseudo class selects the state of a selector, in this case for hover effect's purpose*/   
@@ -136,7 +137,7 @@ p{
     height: 33px;
     background-color: #8EE3C8;
     border-radius: 7px;
-    padding: 5px;
+    padding: 0.26em;
 }
 .github:hover{         /*This pseudo class selects the state of a selector, in this case for hover effect's purpose*/   
     background-color:#fafafac5; 
@@ -210,52 +211,14 @@ h2{
     padding-top: 3.5em;
 }
 
-@media only screen and (max-width:1000px) { /*Anything equal or bellow 1000px will have the following styling*/
-    h1{
-        font-size: 1.8em;
-        line-height: 0.5em;
-        margin-bottom: 0px;
-        text-transform: uppercase;
-    }
-    .my-name{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 0.5em;
-        padding-bottom: 1.5em;
-    }
-    .about-main{
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: center;
-    }
-    .about-img-container{
-        display: none;
-    }
-    .about-text{
-        font-size: 8rem;
-        color: #1f1f1fc4;
-        width: auto;
-    }
-    .project-column{
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: center;
-        gap: 3.5em;
-    }
-}
-
 
 .project-card{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    width: 280px;
-    height: 480px;
+    width: 17em;
+    height: 29em;
     background-color: rgb(255, 255, 255);
     padding: 15px;
     box-shadow: 5px 5px 10px;
@@ -330,3 +293,55 @@ footer{
     font-size: 30px;
 }
 
+
+@media only screen and (max-width:1000px) { /*Anything equal or bellow 1000px will have the following styling*/
+    h1{
+        font-size: 1.8em;
+        line-height: 0.8em;
+        margin-bottom: 0px;
+        text-transform:uppercase;
+        font-weight: 550;
+    }
+    .my-name{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 0.4em;
+        padding-bottom: 3em;
+    }
+    .work-area{
+        font-size: 1em;
+        font-weight: 450;
+        padding-top: 2em;
+        padding-bottom: 2em;
+    }
+    .about-main{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .about-img-container{
+        display: none;
+    }
+    .about-text{
+        font-size: 8rem;
+        color: #1f1f1fc4;
+        width: auto;
+    }
+    .project-column{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 3.5em;
+    }
+    .project-card{
+        width: 23em;
+        height: 33em;
+    }
+    ul{
+        font-size: 0.9em;
+    }
+}
