@@ -66,7 +66,7 @@ li{
 .hello{
     font-family: 'Poppins';
     font-weight: 350;
-    font-size: 1.9em;
+    font-size: 1.4em;
     margin-bottom: 0.15em;
 }
 h4{
@@ -79,11 +79,11 @@ h4{
     color: #65d6c7;
     font-family: 'Heebo', sans-serif;
     font-style: italic;
-    padding: 2em 0.1em 2em 0.1em;
-    font-size: 1.15em;
+    padding: 1.3em 0.1em 1.3em 0.1em;
+    font-size: 0.9em;
     font-weight: 400;
-    margin-left: 0.5em;
-    margin-right: 0.5em;
+    margin-left: 0.2em;
+    margin-right: 0.2em;
 }
 
 h1{
@@ -92,7 +92,7 @@ h1{
     align-items: center;
     font-family: 'Heebo', sans-serif;
     font-size: 1.2em;
-    padding-bottom: 0.2em;
+    padding-bottom: 0.4em;
     font-weight: 600;
 }
 
