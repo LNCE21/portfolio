@@ -60,23 +60,41 @@ li{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 0.6em;
+    gap: 0em;
 }
+.hello{
+    font-family: 'Poppins';
+    font-weight: 350;
+    font-size: 2em;
+    margin-bottom: 0.2em;
+}
+h4{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+    font-size: 1.2em;
+    margin-top: 0px;
+}
+.build{
+    color: #65d6c7;
+    font-style: italic;
+    padding: 2em 0.1em 2em 0.1em;
+    font-size: 1.2em;
+    font-weight: 400;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+}
+
 h1{
-    font-family: 'Poppins', sans-serif ;
-    font-size: 2.15em;
-}
-.my-name{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 0.9em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.2em;
+    padding-bottom: 0.2em;
+    font-weight: 550;
 }
-.work-area{
-    font-size: 1.3em;
-    font-weight: 450;
-    padding-bottom: 0.8em;
-}
+
+
 .buttons{
     display: flex;
     justify-content: center;
@@ -226,29 +244,30 @@ h2{
     width: 17em;
     height: 29em;
     background-color: rgb(255, 255, 255);
-    padding: 15px;
-    box-shadow: 5px 5px 10px;
-    border-radius: 10px;
-    margin: 10px;
+    padding: 1em;
+    box-shadow: 0.1em 0.25em 0.4em;
+    border-radius: 1em;
+    margin: 1em;
 }
 
 .project-description{
     align-self: center;
-    font-size: 18px;
-    font-weight: 250;
-    margin-left: 10px;
-    padding: 5px;
+    font-size: 1.13em;
+    font-weight: 300;
+    margin-left: 0.2em;
+    margin-right: 0.2em;
+    padding: 0.3em;
 }
 .project-img{
-    width: 250px;
-    height: 250px;
+    width: 15em;
+    height: 15em;
     border-radius: 50%;
     margin: 0px;
     padding: 0px;
 }
 .project-img-1{
-    width: 245px;
-    height: 223px;
+    width: 15em;
+    height: 13.5em;
     border-radius: 50%;
     margin: 0px;
     padding: 0px;
@@ -301,26 +320,8 @@ footer{
 
 
 @media only screen and (max-width:1000px) { /*Anything equal or bellow 1000px will have the following styling*/
-    h1{
-        font-size: 1.8em;
-        line-height: 0.8em;
-        margin-bottom: 0px;
-        text-transform: uppercase;
-        font-weight: 550;
-    }
-    .my-name{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 0.4em;
-        padding-bottom: 3em;
-    }
-    .work-area{
+    .build{
         font-size: 1em;
-        font-weight: 450;
-        padding-top: 2em;
-        padding-bottom: 2em;
     }
     .about-main{
         display: flex;
@@ -332,8 +333,10 @@ footer{
         display: none;
     }
     .about-text{
-        font-size: 8rem;
-        color: #1f1f1fc4;
+        display: flex;
+        justify-content: center;
+        font-size: 2em;
+        color: #111111d7;
         width: auto;
     }
     .project-column{
@@ -343,15 +346,10 @@ footer{
         align-items: center;
         gap: 3.5em;
     }
-    .project-card{
-        width: 23em;
-        height: 33em;
-    }
+   
     ul{
         display: none;
         background-color:#2f313c00;
-        margin: 0px;
-        align-self: center;
     }
     ul.show{
         display: block;
@@ -363,7 +361,7 @@ footer{
         flex-direction: row;
         background-color: #2f313c6e;
         border-radius: 0.2em;
-        font-size: 1.2em;
+        font-size: 1.15em;
         height: auto;
     }
     li{
@@ -387,7 +385,7 @@ footer{
         outline: 0;
     }
     .logo{
-        display: none;
+        margin-top: 0.8em;
     }
     i{
         padding-top: 1em;
