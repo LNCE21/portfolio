@@ -15,4 +15,5 @@ I've included media queries for responsiveness and a little bit of Javascript fo
 1. Contact form, to leave a message.
 2. Fixed navigation bar, that way when the user begins to scroll, it will be easier for him to reach another section.
 3. Improve the overall layout. 
+4. Keep commenting on the code to make it easier to understand. 
 
