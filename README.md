@@ -2,10 +2,6 @@
 I have developed a Minimum Viable Product (MVP) of my personal website so that I can start using it right away.
 
 
-### **Installation**
-You just need to run the code with live server, an extension for Visual Studio Code.
-
-
 ### **Layout**
 I've decided to make a simple design so that i can showcase my other projects.
 I've included media queries for responsiveness and a little bit of Javascript for the user experience when on mobile devices so the nav bar transforms to a Hamburger Menu.
