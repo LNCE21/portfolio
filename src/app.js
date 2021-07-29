@@ -7,3 +7,8 @@ function toggleButton(){                /*Toggle function, grabs the navList, cl
 
 /*Now we attached this to the hamburger button */
 hamburgerButton.addEventListener('click', toggleButton) /*So, if we click, we toggle the button*/
+
+const developer = document.querySelectorAll('.developer path');
+for(let i = 0; i<developer.length; i++){
+    console.log(`Letter ${i} is ${developer[i].getTotalLength()}`);
+}

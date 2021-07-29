@@ -7,7 +7,7 @@ section {
 }
 
 #hero{
-    background-color: #1c1d25; /* This class is inside a section so we inherited the height */
+    background-color: #1d1d20; /* This class is inside a section so we inherited the height */
     height: 100vh; /*Viewport height 100 stands for 100% the viewport height*/
     color: #ffffff;
     font-size: 40px;
@@ -66,8 +66,31 @@ li{
 .hello{
     font-family: 'Poppins';
     font-weight: 350;
-    font-size: 1.4em;
-    margin-bottom: 0.15em;
+    font-size: 1.2em;
+    padding: 0px;
+    margin: 0px;
+    
+}
+.frontend{
+    font-family: 'Poppins';
+    font-weight: 350;
+    font-size: 1.2em;
+    padding-top: 0px;
+    padding-bottom: 0.8em;
+    margin: 0px;
+}
+.developer{
+    padding-bottom: 2.1em;
+}
+path{
+    stroke-dasharray: 519.9765014648438;
+    stroke-dashoffset: 550.9765014648438;
+    animation: line-anim 6s ease forwards;
+}
+@keyframes line-anim{
+    to{
+        stroke-dashoffset: 0;
+    }
 }
 h4{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -80,7 +103,7 @@ h4{
     font-family: 'Heebo', sans-serif;
     font-style: italic;
     padding: 1.3em 0.1em 1.3em 0.1em;
-    font-size: 0.9em;
+    font-size: 0.6em;
     font-weight: 400;
     margin-left: 0.2em;
     margin-right: 0.2em;
@@ -329,7 +352,7 @@ footer{
 
 @media only screen and (max-width:1150px) { /*Anything equal or bellow 1000px will have the following styling*/
     .build{
-        font-size: 1em;
+        font-size: 0.7em;
     }
     .about-main{
         display: flex;
