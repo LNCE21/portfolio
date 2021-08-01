@@ -79,19 +79,22 @@ li{
     padding-bottom: 0.8em;
     margin: 0px;
 }
+/*SVG styling starts here*/
 .developer{
     padding-bottom: 2.1em;
 }
+/*Path stands for all the letters, i've selected all at once*/
 path{
-    stroke-dasharray: 519.9765014648438;
-    stroke-dashoffset: 550.9765014648438;
-    animation: line-anim 6s ease forwards;
+    stroke-dasharray: 519.9765014648438; /*It's going to make spaces/gaps on the layout of each letter*/
+    stroke-dashoffset: 550.9765014648438; /*This moves the position of the spaces around the letter*/
+    animation: line-anim 6s ease forwards; /*After that we added the spaces we're going to animate that backwards so it starts incomplete and the spaces began to disappear*/
 }
 @keyframes line-anim{
     to{
         stroke-dashoffset: 0;
     }
 }
+/*SVG styling ends here*/
 h4{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: 600;
