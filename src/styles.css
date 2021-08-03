@@ -89,6 +89,7 @@ path{
     stroke-dashoffset: 550.9765014648438; /*This moves the position of the spaces around the letter*/
     animation: line-anim 6s ease forwards; /*After that we added the spaces we're going to animate that backwards so it starts incomplete and the spaces began to disappear*/
 }
+/*Setting the position to zero so it gives us the full frame of the svg*/
 @keyframes line-anim{
     to{
         stroke-dashoffset: 0;
