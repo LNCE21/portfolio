@@ -6,6 +6,7 @@ section {
     background-color: hsla(188, 80%, 96%, 0.904);
 }
 
+/*Here starts the Hero Section*/
 #hero{
     background-color: #1d1d20; /* This class is inside a section so we inherited the height */
     height: 100vh; /*Viewport height 100 stands for 100% the viewport height*/
@@ -209,6 +210,9 @@ p{
     background: #8EE3C8;
     height: 27px;    /*This will generate the feeling its being pressed*/
 }
+/*Here ends the Hero Section*/
+
+/*Here starts the about Section*/
 #about-section{
     display: flex;
     flex-direction: column;
@@ -257,8 +261,9 @@ h2{
     border-radius: 5%;
     margin-bottom: 20px;
 }
+/*Here ends the about Section*/
 
-
+/*Here starts the project Section*/
 #project-section{
     display:flex;
     flex-direction: column;
@@ -330,6 +335,9 @@ a{
     padding-left: 5px;
     padding-right: 5px; 
 }
+/*Here ends the project Section*/
+
+/*Here starts the contact Section*/
 footer{
     height: 24em;
     background-color: black;
@@ -355,7 +363,9 @@ footer{
     gap: 24px;
     font-size: 30px;
 }
+/*Here ends the contact Section*/
 
+/*Adding media queries to the overall layout*/
 
 @media only screen and (max-width:1150px) { /*Anything equal or bellow 1000px will have the following styling*/
     .build{
