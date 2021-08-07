@@ -365,6 +365,7 @@ footer{
 }
 /*Here ends the contact Section*/
 
+
 /*Adding media queries to the overall layout*/
 
 @media only screen and (max-width:1150px) { /*Anything equal or bellow 1000px will have the following styling*/
