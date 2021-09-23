@@ -393,6 +393,8 @@ footer{
         font-size: 2em;
         color: #111111d7;
         width: auto;
+        text-align: center;
+        text-justify: auto;
     }
     .project-column{
         display: flex;
