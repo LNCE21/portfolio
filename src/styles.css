@@ -285,12 +285,16 @@ h2{
     justify-content: flex-start;
     align-items: center;
     width: 17em;
-    height: 29em;
+    height: 31em;
     background-color: rgb(255, 255, 255);
     padding: 1em;
     box-shadow: 0.1em 0.25em 0.4em;
     border-radius: 1em;
     margin: 1em;
+}
+
+h3{
+    margin: 0;
 }
 
 .project-description{
@@ -300,18 +304,20 @@ h2{
     margin-left: 0.2em;
     margin-right: 0.2em;
     padding: 0.3em;
+    text-align: center;
+    text-justify: auto;
 }
 .project-img{
     width: 15em;
     height: 15em;
-    border-radius: 50%;
+    border-radius: 5%;
     margin: 0px;
     padding: 0px;
 }
 .project-img-1{
     width: 15em;
-    height: 13.5em;
-    border-radius: 50%;
+    height: 11.8em;
+    border-radius: 5%;
     margin: 0px;
     padding: 0px;
 }
