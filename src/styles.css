@@ -318,6 +318,13 @@ h3{
     margin: 0px;
     padding: 0px;
 }
+.project-img-2{
+    width: 15em;
+    height: 13.1em;
+    border-radius: 5%;
+    margin: 0px;
+    padding: 0px;
+}
 hr{
     color: black;
     width: 75%;
