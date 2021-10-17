@@ -1,141 +1,213 @@
 <!DOCTYPE html>
 <html lang="en">
-    
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">               <!--The X-UA-Compatible meta tag allows web authors to choose what version of Internet Explorer the page should be rendered as-->
-        <meta name="keywords" content="portfolio,personal website, Front-End, my projects">    
-        <meta name="description" content="This is my portfolio where I present my evolution and recent work.">
-        <meta name="author" content="Lautaro Clerici Erhardt">
-        <meta name="copyright" content="Lautaro Clerici Erhardt">
-        <link rel="stylesheet" href="src/styles.css">                       <!--Links and specifies the relationship between this document and the external resource (which is mentioned with href attribute)-->
-        <link rel="preconnect" href="https://fonts.googleapis.com">         <!--This and the next lines are a link which reference the poppins font from google-->
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Heebo&display=swap" rel="stylesheet">
-        <link rel="icon" href="src/images/fav.ico">
-        <script src="https://kit.fontawesome.com/dfb62189b7.js" crossorigin="anonymous"></script>   <!--This is for the hamburguer icon-->
-        <title>LNCE</title>                                                      <!--This will only be visible on the browser tab-->
-    </head>
-    
-    <body>
-        <!--Hero section is tipically a full screen section at the top of your homepage layout. Can include: images, video, illustrationes, animations, text. Has the objective to capture attention.-->
-        <section id="hero"> 
-            <nav>                                                                   <!--Navbar has a logo, an unorderer list and in mobile version a hamburger button instead of the ul-->
-                <img class="logo" src="src/images/resume.png" alt="Personal Logo"> 
-                <ul id="nav-list">
-                    <!--<li><a href="#hero">Home</a></li>-->
-                    <li><a href="#about-section">About</a></li> 
-                    <li><a href="#project-section">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-                <button class="hamburger" id="hamburger">
-                    <i class="fas fa-bars"></i>
-                </button>
-            </nav>
-            
-            <div class="hero-main"> <!--With this class i can center the "hero-name" within this "hero-main" area, but without touching the nav-->
-                <div class="hero-name"> <!--This div is here so i can separate and style them together-->
-                    
-                    <p class="front-600" id="frontend">Front End</p>
-                    <!--The following SVG is a design (word "DEVELOPER") made in FIGMA, i've selected "Outline Stroke" so i have different paths for the letters before i exported on SVG format-->
-                    <!--I have added the class "developer" for the padding of that block-->
-                    <svg class="developer" width="689" height="100" viewBox="0 0 689 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <mask id="path-1-outside-1" maskUnits="userSpaceOnUse" x="0" y="0" width="689" height="100" fill="black">
-                        <rect fill="white" width="689" height="100"/>
-                        <path d="M31.427 4.048C41.383 4.048 49.9853 5.92567 57.234 9.681C64.57 13.349 70.1593 18.6327 74.002 25.532C77.932 32.4313 79.897 40.5533 79.897 49.898C79.897 59.2427 77.932 67.3647 74.002 74.264C70.1593 81.076 64.57 86.316 57.234 89.984C49.9853 93.5647 41.383 95.355 31.427 95.355H3V4.048H31.427ZM31.427 85.53C43.217 85.53 52.2123 82.4297 58.413 76.229C64.6137 69.941 67.714 61.164 67.714 49.898C67.714 38.5447 64.57 29.6803 58.282 23.305C52.0813 16.9297 43.1297 13.742 31.427 13.742H14.921V85.53H31.427Z"/>
-                        <path d="M107.542 13.742V44.265H140.816V54.09H107.542V85.53H144.746V95.355H95.6211V3.917H144.746V13.742H107.542Z"/>
-                        <path d="M238.24 4.048L203.787 95.355H190.032L155.579 4.048H168.286L196.975 82.779L225.664 4.048H238.24Z"/>
-                        <path d="M263.233 13.742V44.265H296.507V54.09H263.233V85.53H300.437V95.355H251.312V3.917H300.437V13.742H263.233Z"/>
-                        <path d="M330.396 85.661H362.36V95.355H318.475V4.048H330.396V85.661Z"/>
-                        <path d="M416.416 96.272C407.944 96.272 400.215 94.307 393.229 90.377C386.242 86.3597 380.696 80.814 376.592 73.74C372.574 66.5787 370.566 58.544 370.566 49.636C370.566 40.728 372.574 32.737 376.592 25.663C380.696 18.5017 386.242 12.956 393.229 9.026C400.215 5.00867 407.944 3 416.416 3C424.974 3 432.747 5.00867 439.734 9.026C446.72 12.956 452.222 18.458 456.24 25.532C460.257 32.606 462.266 40.6407 462.266 49.636C462.266 58.6313 460.257 66.666 456.24 73.74C452.222 80.814 446.72 86.3597 439.734 90.377C432.747 94.307 424.974 96.272 416.416 96.272ZM416.416 85.923C422.791 85.923 428.511 84.4383 433.577 81.469C438.729 78.4997 442.747 74.264 445.629 68.762C448.598 63.26 450.083 56.8847 450.083 49.636C450.083 42.3 448.598 35.9247 445.629 30.51C442.747 25.008 438.773 20.7723 433.708 17.803C428.642 14.8337 422.878 13.349 416.416 13.349C409.953 13.349 404.189 14.8337 399.124 17.803C394.058 20.7723 390.041 25.008 387.072 30.51C384.19 35.9247 382.749 42.3 382.749 49.636C382.749 56.8847 384.19 63.26 387.072 68.762C390.041 74.264 394.058 78.4997 399.124 81.469C404.276 84.4383 410.04 85.923 416.416 85.923Z"/>
-                        <path d="M539.049 30.772C539.049 38.37 536.429 44.7017 531.189 49.767C526.036 54.745 518.133 57.234 507.478 57.234H489.924V95.355H478.003V4.048H507.478C517.783 4.048 525.6 6.537 530.927 11.515C536.342 16.493 539.049 22.912 539.049 30.772ZM507.478 47.409C514.115 47.409 519.006 45.968 522.15 43.086C525.294 40.204 526.866 36.0993 526.866 30.772C526.866 19.506 520.403 13.873 507.478 13.873H489.924V47.409H507.478Z"/>
-                        <path d="M565.786 13.742V44.265H599.06V54.09H565.786V85.53H602.99V95.355H553.865V3.917H602.99V13.742H565.786Z"/>
-                        <path d="M669.105 95.355L647.359 58.02H632.949V95.355H621.028V4.048H650.503C657.403 4.048 663.21 5.22701 667.926 7.58501C672.73 9.94301 676.31 13.1307 678.668 17.148C681.026 21.1653 682.205 25.7503 682.205 30.903C682.205 37.191 680.371 42.7367 676.703 47.54C673.123 52.3433 667.708 55.531 660.459 57.103L683.384 95.355H669.105ZM632.949 48.457H650.503C656.966 48.457 661.813 46.885 665.044 43.741C668.276 40.5097 669.891 36.2303 669.891 30.903C669.891 25.4883 668.276 21.2963 665.044 18.327C661.9 15.3577 657.053 13.873 650.503 13.873H632.949V48.457Z"/>
-                        </mask>
-                        <path d="M31.427 4.048C41.383 4.048 49.9853 5.92567 57.234 9.681C64.57 13.349 70.1593 18.6327 74.002 25.532C77.932 32.4313 79.897 40.5533 79.897 49.898C79.897 59.2427 77.932 67.3647 74.002 74.264C70.1593 81.076 64.57 86.316 57.234 89.984C49.9853 93.5647 41.383 95.355 31.427 95.355H3V4.048H31.427ZM31.427 85.53C43.217 85.53 52.2123 82.4297 58.413 76.229C64.6137 69.941 67.714 61.164 67.714 49.898C67.714 38.5447 64.57 29.6803 58.282 23.305C52.0813 16.9297 43.1297 13.742 31.427 13.742H14.921V85.53H31.427Z" stroke="#9CD3C2" stroke-width="6" mask="url(#path-1-outside-1)"/>
-                        <path d="M107.542 13.742V44.265H140.816V54.09H107.542V85.53H144.746V95.355H95.6211V3.917H144.746V13.742H107.542Z" stroke="#9CD3C2" stroke-width="6" mask="url(#path-1-outside-1)"/>
-                        <path d="M238.24 4.048L203.787 95.355H190.032L155.579 4.048H168.286L196.975 82.779L225.664 4.048H238.24Z" stroke="#9CD3C2" stroke-width="6" mask="url(#path-1-outside-1)"/>
-                        <path d="M263.233 13.742V44.265H296.507V54.09H263.233V85.53H300.437V95.355H251.312V3.917H300.437V13.742H263.233Z" stroke="#9CD3C2" stroke-width="6" mask="url(#path-1-outside-1)"/>
-                        <path d="M330.396 85.661H362.36V95.355H318.475V4.048H330.396V85.661Z" stroke="#9CD3C2" stroke-width="6" mask="url(#path-1-outside-1)"/>
-                        <path d="M416.416 96.272C407.944 96.272 400.215 94.307 393.229 90.377C386.242 86.3597 380.696 80.814 376.592 73.74C372.574 66.5787 370.566 58.544 370.566 49.636C370.566 40.728 372.574 32.737 376.592 25.663C380.696 18.5017 386.242 12.956 393.229 9.026C400.215 5.00867 407.944 3 416.416 3C424.974 3 432.747 5.00867 439.734 9.026C446.72 12.956 452.222 18.458 456.24 25.532C460.257 32.606 462.266 40.6407 462.266 49.636C462.266 58.6313 460.257 66.666 456.24 73.74C452.222 80.814 446.72 86.3597 439.734 90.377C432.747 94.307 424.974 96.272 416.416 96.272ZM416.416 85.923C422.791 85.923 428.511 84.4383 433.577 81.469C438.729 78.4997 442.747 74.264 445.629 68.762C448.598 63.26 450.083 56.8847 450.083 49.636C450.083 42.3 448.598 35.9247 445.629 30.51C442.747 25.008 438.773 20.7723 433.708 17.803C428.642 14.8337 422.878 13.349 416.416 13.349C409.953 13.349 404.189 14.8337 399.124 17.803C394.058 20.7723 390.041 25.008 387.072 30.51C384.19 35.9247 382.749 42.3 382.749 49.636C382.749 56.8847 384.19 63.26 387.072 68.762C390.041 74.264 394.058 78.4997 399.124 81.469C404.276 84.4383 410.04 85.923 416.416 85.923Z" stroke="#9CD3C2" stroke-width="6" mask="url(#path-1-outside-1)"/>
-                        <path d="M539.049 30.772C539.049 38.37 536.429 44.7017 531.189 49.767C526.036 54.745 518.133 57.234 507.478 57.234H489.924V95.355H478.003V4.048H507.478C517.783 4.048 525.6 6.537 530.927 11.515C536.342 16.493 539.049 22.912 539.049 30.772ZM507.478 47.409C514.115 47.409 519.006 45.968 522.15 43.086C525.294 40.204 526.866 36.0993 526.866 30.772C526.866 19.506 520.403 13.873 507.478 13.873H489.924V47.409H507.478Z" stroke="#9CD3C2" stroke-width="6" mask="url(#path-1-outside-1)"/>
-                        <path d="M565.786 13.742V44.265H599.06V54.09H565.786V85.53H602.99V95.355H553.865V3.917H602.99V13.742H565.786Z" stroke="#9CD3C2" stroke-width="6" mask="url(#path-1-outside-1)"/>
-                        <path d="M669.105 95.355L647.359 58.02H632.949V95.355H621.028V4.048H650.503C657.403 4.048 663.21 5.22701 667.926 7.58501C672.73 9.94301 676.31 13.1307 678.668 17.148C681.026 21.1653 682.205 25.7503 682.205 30.903C682.205 37.191 680.371 42.7367 676.703 47.54C673.123 52.3433 667.708 55.531 660.459 57.103L683.384 95.355H669.105ZM632.949 48.457H650.503C656.966 48.457 661.813 46.885 665.044 43.741C668.276 40.5097 669.891 36.2303 669.891 30.903C669.891 25.4883 668.276 21.2963 665.044 18.327C661.9 15.3577 657.053 13.873 650.503 13.873H632.949V48.457Z" stroke="#9CD3C2" stroke-width="6" mask="url(#path-1-outside-1)"/>
-                    </svg>
-                      
-                    <p class="build">I'M LAUTARO, LET'S BUILD AMAZING EXPERIENCES TOGETHER</p>
-                </div>
-                
-                <div class="buttons">
-                    <div><a class="resume-button" target="_blank" href="https://drive.google.com/file/d/1cn3Sg0FwWYAzRJ9Il0D7KJe0FDhYPRbU/view?usp=sharing">Resume</a></div> <!--I don't use a button tag because it comes pre-styled-->  
-                    <div class="social-media">
-                        <div><a target="_blank" href="https://www.linkedin.com/in/lautaro-nicolas-clerici-erhardt-69b021216/"><img class="linkedin" src="src/images/linkedin.png" alt="My LinkedIn Profile"></a></div> 
-                        <div><a target="_blank" href="https://github.com/LNCE21"><img class="github" src="src/images/github.png" alt="GitHub Account"></a></div>              
-                    </div> 
-                </div>
-                <img class="scroll" src="src/images/mouse.png" alt="Scroll Down Icon">
-            </div> 
-        </section>
-        <!--Here starts the about section-->
-        <section id="about-section">
-            <div class="title"><h2>About</h2></div>
-            <div class="about-main">
-                <div class="about-text">
-                    <p> Hello everyone, my name is Lautaro Clerici Erhardt.
-                        I am a software developer focused on the entire Front-End spectrum.<br>
-                        I have a great passion for IT and I keep myself in constant learning and
-                        improving my skills.<br>
-                        My stack includes Html, Css, Javascript, Git & Github and Figma.<br>
-                        I also have a background around the psychology degree of more than 3 years right before my coding path.
-                    </p>
-                </div>    
-                <div class="about-img-container"><img class="about-img" src="src/images/team.jpg" alt="Work Meeting"></div>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--The X-UA-Compatible meta tag allows web authors to choose what version of Internet Explorer the page should be rendered as-->
+    <meta name="keywords" content="portfolio,personal website, Front-End, my projects">
+    <meta name="description" content="This is my portfolio where I present my evolution and recent work.">
+    <meta name="author" content="Lautaro Clerici Erhardt">
+    <meta name="copyright" content="Lautaro Clerici Erhardt">
+    <link rel="stylesheet" href="src/styles.css">
+    <!--Links and specifies the relationship between this document and the external resource (which is mentioned with href attribute)-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!--This and the next lines are a link which reference the poppins font from google-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo&display=swap" rel="stylesheet">
+    <link rel="icon" href="src/images/fav.ico">
+    <script src="https://kit.fontawesome.com/dfb62189b7.js" crossorigin="anonymous"></script>
+    <!--This is for the hamburguer icon-->
+    <title>LNCE</title>
+    <!--This will only be visible on the browser tab-->
+</head>
+
+<body>
+    <!--Hero section is tipically a full screen section at the top of your homepage layout. Can include: images, video, illustrationes, animations, text. Has the objective to capture attention.-->
+    <section id="hero">
+        <nav>
+            <!--Navbar has a logo, an unorderer list and in mobile version a hamburger button instead of the ul-->
+            <img class="logo" src="src/images/resume.png" alt="Personal Logo">
+            <ul id="nav-list">
+                <!--<li><a href="#hero">Home</a></li>-->
+                <li><a href="#about-section">About</a></li>
+                <li><a href="#project-section">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="hamburger" id="hamburger">
+                <i class="fas fa-bars"></i>
+            </button>
+        </nav>
+
+        <div class="hero-main">
+            <!--With this class i can center the "hero-name" within this "hero-main" area, but without touching the nav-->
+            <div class="hero-name">
+                <!--This div is here so i can separate and style them together-->
+
+                <p class="front-600" id="frontend">Front End</p>
+                <!--The following SVG is a design (word "DEVELOPER") made in FIGMA, i've selected "Outline Stroke" so i have different paths for the letters before i exported on SVG format-->
+                <!--I have added the class "developer" for the padding of that block-->
+                <svg class="developer" width="689" height="100" viewBox="0 0 689 100" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <mask id="path-1-outside-1" maskUnits="userSpaceOnUse" x="0" y="0" width="689" height="100"
+                        fill="black">
+                        <rect fill="white" width="689" height="100" />
+                        <path
+                            d="M31.427 4.048C41.383 4.048 49.9853 5.92567 57.234 9.681C64.57 13.349 70.1593 18.6327 74.002 25.532C77.932 32.4313 79.897 40.5533 79.897 49.898C79.897 59.2427 77.932 67.3647 74.002 74.264C70.1593 81.076 64.57 86.316 57.234 89.984C49.9853 93.5647 41.383 95.355 31.427 95.355H3V4.048H31.427ZM31.427 85.53C43.217 85.53 52.2123 82.4297 58.413 76.229C64.6137 69.941 67.714 61.164 67.714 49.898C67.714 38.5447 64.57 29.6803 58.282 23.305C52.0813 16.9297 43.1297 13.742 31.427 13.742H14.921V85.53H31.427Z" />
+                        <path
+                            d="M107.542 13.742V44.265H140.816V54.09H107.542V85.53H144.746V95.355H95.6211V3.917H144.746V13.742H107.542Z" />
+                        <path
+                            d="M238.24 4.048L203.787 95.355H190.032L155.579 4.048H168.286L196.975 82.779L225.664 4.048H238.24Z" />
+                        <path
+                            d="M263.233 13.742V44.265H296.507V54.09H263.233V85.53H300.437V95.355H251.312V3.917H300.437V13.742H263.233Z" />
+                        <path d="M330.396 85.661H362.36V95.355H318.475V4.048H330.396V85.661Z" />
+                        <path
+                            d="M416.416 96.272C407.944 96.272 400.215 94.307 393.229 90.377C386.242 86.3597 380.696 80.814 376.592 73.74C372.574 66.5787 370.566 58.544 370.566 49.636C370.566 40.728 372.574 32.737 376.592 25.663C380.696 18.5017 386.242 12.956 393.229 9.026C400.215 5.00867 407.944 3 416.416 3C424.974 3 432.747 5.00867 439.734 9.026C446.72 12.956 452.222 18.458 456.24 25.532C460.257 32.606 462.266 40.6407 462.266 49.636C462.266 58.6313 460.257 66.666 456.24 73.74C452.222 80.814 446.72 86.3597 439.734 90.377C432.747 94.307 424.974 96.272 416.416 96.272ZM416.416 85.923C422.791 85.923 428.511 84.4383 433.577 81.469C438.729 78.4997 442.747 74.264 445.629 68.762C448.598 63.26 450.083 56.8847 450.083 49.636C450.083 42.3 448.598 35.9247 445.629 30.51C442.747 25.008 438.773 20.7723 433.708 17.803C428.642 14.8337 422.878 13.349 416.416 13.349C409.953 13.349 404.189 14.8337 399.124 17.803C394.058 20.7723 390.041 25.008 387.072 30.51C384.19 35.9247 382.749 42.3 382.749 49.636C382.749 56.8847 384.19 63.26 387.072 68.762C390.041 74.264 394.058 78.4997 399.124 81.469C404.276 84.4383 410.04 85.923 416.416 85.923Z" />
+                        <path
+                            d="M539.049 30.772C539.049 38.37 536.429 44.7017 531.189 49.767C526.036 54.745 518.133 57.234 507.478 57.234H489.924V95.355H478.003V4.048H507.478C517.783 4.048 525.6 6.537 530.927 11.515C536.342 16.493 539.049 22.912 539.049 30.772ZM507.478 47.409C514.115 47.409 519.006 45.968 522.15 43.086C525.294 40.204 526.866 36.0993 526.866 30.772C526.866 19.506 520.403 13.873 507.478 13.873H489.924V47.409H507.478Z" />
+                        <path
+                            d="M565.786 13.742V44.265H599.06V54.09H565.786V85.53H602.99V95.355H553.865V3.917H602.99V13.742H565.786Z" />
+                        <path
+                            d="M669.105 95.355L647.359 58.02H632.949V95.355H621.028V4.048H650.503C657.403 4.048 663.21 5.22701 667.926 7.58501C672.73 9.94301 676.31 13.1307 678.668 17.148C681.026 21.1653 682.205 25.7503 682.205 30.903C682.205 37.191 680.371 42.7367 676.703 47.54C673.123 52.3433 667.708 55.531 660.459 57.103L683.384 95.355H669.105ZM632.949 48.457H650.503C656.966 48.457 661.813 46.885 665.044 43.741C668.276 40.5097 669.891 36.2303 669.891 30.903C669.891 25.4883 668.276 21.2963 665.044 18.327C661.9 15.3577 657.053 13.873 650.503 13.873H632.949V48.457Z" />
+                    </mask>
+                    <path
+                        d="M31.427 4.048C41.383 4.048 49.9853 5.92567 57.234 9.681C64.57 13.349 70.1593 18.6327 74.002 25.532C77.932 32.4313 79.897 40.5533 79.897 49.898C79.897 59.2427 77.932 67.3647 74.002 74.264C70.1593 81.076 64.57 86.316 57.234 89.984C49.9853 93.5647 41.383 95.355 31.427 95.355H3V4.048H31.427ZM31.427 85.53C43.217 85.53 52.2123 82.4297 58.413 76.229C64.6137 69.941 67.714 61.164 67.714 49.898C67.714 38.5447 64.57 29.6803 58.282 23.305C52.0813 16.9297 43.1297 13.742 31.427 13.742H14.921V85.53H31.427Z"
+                        stroke="#9CD3C2" stroke-width="6" mask="url(#path-1-outside-1)" />
+                    <path
+                        d="M107.542 13.742V44.265H140.816V54.09H107.542V85.53H144.746V95.355H95.6211V3.917H144.746V13.742H107.542Z"
+                        stroke="#9CD3C2" stroke-width="6" mask="url(#path-1-outside-1)" />
+                    <path
+                        d="M238.24 4.048L203.787 95.355H190.032L155.579 4.048H168.286L196.975 82.779L225.664 4.048H238.24Z"
+                        stroke="#9CD3C2" stroke-width="6" mask="url(#path-1-outside-1)" />
+                    <path
+                        d="M263.233 13.742V44.265H296.507V54.09H263.233V85.53H300.437V95.355H251.312V3.917H300.437V13.742H263.233Z"
+                        stroke="#9CD3C2" stroke-width="6" mask="url(#path-1-outside-1)" />
+                    <path d="M330.396 85.661H362.36V95.355H318.475V4.048H330.396V85.661Z" stroke="#9CD3C2"
+                        stroke-width="6" mask="url(#path-1-outside-1)" />
+                    <path
+                        d="M416.416 96.272C407.944 96.272 400.215 94.307 393.229 90.377C386.242 86.3597 380.696 80.814 376.592 73.74C372.574 66.5787 370.566 58.544 370.566 49.636C370.566 40.728 372.574 32.737 376.592 25.663C380.696 18.5017 386.242 12.956 393.229 9.026C400.215 5.00867 407.944 3 416.416 3C424.974 3 432.747 5.00867 439.734 9.026C446.72 12.956 452.222 18.458 456.24 25.532C460.257 32.606 462.266 40.6407 462.266 49.636C462.266 58.6313 460.257 66.666 456.24 73.74C452.222 80.814 446.72 86.3597 439.734 90.377C432.747 94.307 424.974 96.272 416.416 96.272ZM416.416 85.923C422.791 85.923 428.511 84.4383 433.577 81.469C438.729 78.4997 442.747 74.264 445.629 68.762C448.598 63.26 450.083 56.8847 450.083 49.636C450.083 42.3 448.598 35.9247 445.629 30.51C442.747 25.008 438.773 20.7723 433.708 17.803C428.642 14.8337 422.878 13.349 416.416 13.349C409.953 13.349 404.189 14.8337 399.124 17.803C394.058 20.7723 390.041 25.008 387.072 30.51C384.19 35.9247 382.749 42.3 382.749 49.636C382.749 56.8847 384.19 63.26 387.072 68.762C390.041 74.264 394.058 78.4997 399.124 81.469C404.276 84.4383 410.04 85.923 416.416 85.923Z"
+                        stroke="#9CD3C2" stroke-width="6" mask="url(#path-1-outside-1)" />
+                    <path
+                        d="M539.049 30.772C539.049 38.37 536.429 44.7017 531.189 49.767C526.036 54.745 518.133 57.234 507.478 57.234H489.924V95.355H478.003V4.048H507.478C517.783 4.048 525.6 6.537 530.927 11.515C536.342 16.493 539.049 22.912 539.049 30.772ZM507.478 47.409C514.115 47.409 519.006 45.968 522.15 43.086C525.294 40.204 526.866 36.0993 526.866 30.772C526.866 19.506 520.403 13.873 507.478 13.873H489.924V47.409H507.478Z"
+                        stroke="#9CD3C2" stroke-width="6" mask="url(#path-1-outside-1)" />
+                    <path
+                        d="M565.786 13.742V44.265H599.06V54.09H565.786V85.53H602.99V95.355H553.865V3.917H602.99V13.742H565.786Z"
+                        stroke="#9CD3C2" stroke-width="6" mask="url(#path-1-outside-1)" />
+                    <path
+                        d="M669.105 95.355L647.359 58.02H632.949V95.355H621.028V4.048H650.503C657.403 4.048 663.21 5.22701 667.926 7.58501C672.73 9.94301 676.31 13.1307 678.668 17.148C681.026 21.1653 682.205 25.7503 682.205 30.903C682.205 37.191 680.371 42.7367 676.703 47.54C673.123 52.3433 667.708 55.531 660.459 57.103L683.384 95.355H669.105ZM632.949 48.457H650.503C656.966 48.457 661.813 46.885 665.044 43.741C668.276 40.5097 669.891 36.2303 669.891 30.903C669.891 25.4883 668.276 21.2963 665.044 18.327C661.9 15.3577 657.053 13.873 650.503 13.873H632.949V48.457Z"
+                        stroke="#9CD3C2" stroke-width="6" mask="url(#path-1-outside-1)" />
+                </svg>
+
+                <p class="build">I'M LAUTARO, LET'S BUILD AMAZING EXPERIENCES TOGETHER</p>
             </div>
-            
-        </section>
-        <!--Here starts the project section-->
-        <section id="project-section">
-            <div class="title"><h2>Projects</h2></div>
-            <div class="project-column">
-                <div class="project-card">
-                    <a href="https://lnce21.github.io/Adventours/" target="_blank">
-                        <img class="project-img-1" src="src/images/project-1.png" alt="Project 1">
-                    </a>
-                    <h3>Adventours</h3>
-                    <p class="project-description">This is my most recent project. It consist on a landing page for a company that makes tours in the nature. The image takes you to the live demo</p>
-                    <hr/>
-                    <p class="view-code" class="project-description"><a class="project-link" target="_blank" href="https://github.com/LNCE21/Adventours">View Code</a>
-                    </p>
+
+            <div class="buttons">
+                <div><a class="resume-button" target="_blank"
+                        href="https://drive.google.com/file/d/1cn3Sg0FwWYAzRJ9Il0D7KJe0FDhYPRbU/view?usp=sharing">Resume</a>
                 </div>
-                
-                <div class="project-card">
-                    <a href="https://drive.google.com/file/d/13a17rOR1ihKx9y4_2IIJN9XaHikczzEs/view?usp=sharing" target="_blank">
-                        <img class="project-img-2" class="project-img" src="src/images/project-2.png" alt="Project 2">
-                    </a>    
-                    <h3>SoftIt</h3>
-                    <p class="project-description">This is a personal project for my fullstack coding bootcamp. Is working in progress. I have made the design with FIGMA.</p>
-                    <hr/>
-                    <p class="project-description"><a class="project-link" target="_blank" href="https://github.com/LNCE21">View Code</a></p>
-                </div> 
-                
+                <!--I don't use a button tag because it comes pre-styled-->
+                <div class="social-media">
+                    <div><a target="_blank"
+                            href="https://www.linkedin.com/in/lautaro-nicolas-clerici-erhardt-69b021216/"><img
+                                class="linkedin" src="src/images/linkedin.png" alt="My LinkedIn Profile"></a></div>
+                    <div><a target="_blank" href="https://github.com/LNCE21"><img class="github"
+                                src="src/images/github.png" alt="GitHub Account"></a></div>
+                </div>
             </div>
-        </section>
-        <!--Links to the Javascript file-->
-        <script src="src/app.js"></script> 
-    </body>    
-    <!--Here starts the contact section on the footer-->
-    <footer id="contact">
-        <div class="title"><h2>Contact me</h2></div>
-        <div><p>Find me on the following socials</p></div>
-        <div class="socials-buttons">  
-            <div class="socials-footer">
-                <div><a target="_blank" href="https://www.linkedin.com/in/lautaro-nicolas-clerici-erhardt-69b021216/"><img class="linkedin" src="src/images/linkedin.png" alt="My LinkedIn Profile"></a></div> 
-                <div><a target="_blank" href="https://github.com/LNCE21"><img class="github" src="src/images/github.png" alt="GitHub Account"></a></div>              
-            </div> 
+            <img class="scroll" src="src/images/mouse.png" alt="Scroll Down Icon">
         </div>
-    </footer>
+    </section>
+    <!--Here starts the about section-->
+    <section id="about-section">
+        <div class="title">
+            <h2>About</h2>
+        </div>
+        <div class="about-main">
+            <div class="about-text">
+                <p> Hello everyone, my name is Lautaro Clerici Erhardt.
+                    I am a software developer focused on the entire Front-End spectrum.<br>
+                    I have a great passion for IT and I keep myself in constant learning and
+                    improving my skills.<br>
+                    My stack includes Html, Css, Javascript, Git & Github and Figma.<br>
+                    I also have a background around the psychology degree of more than 3 years right before my coding
+                    path.
+                </p>
+            </div>
+            <div class="about-img-container"><img class="about-img" src="src/images/team.jpg" alt="Work Meeting"></div>
+        </div>
+
+    </section>
+    <!--Here starts the project section-->
+    <section id="project-section">
+        <div class="title">
+            <h2>Projects</h2>
+        </div>
+        <div class="project-column">
+            <div class="project-card">
+                <a href="https://lnce21.github.io/Adventours/" target="_blank">
+                    <img class="project-img-1" src="src/images/project-1.png" alt="Project 1">
+                </a>
+                <h3>Adventours</h3>
+                <p class="project-description">This is my most recent project. It consist on a landing page for a
+                    company that makes tours in the nature. The image takes you to the live demo</p>
+                <hr />
+                <p class="view-code" class="project-description"><a class="project-link" target="_blank"
+                        href="https://github.com/LNCE21/Adventours">View Code</a>
+                </p>
+            </div>
+
+            <div class="project-card">
+                <a href="https://drive.google.com/file/d/13a17rOR1ihKx9y4_2IIJN9XaHikczzEs/view?usp=sharing"
+                    target="_blank">
+                    <img class="project-img-2" class="project-img" src="src/images/project-2.png" alt="Project 2">
+                </a>
+                <h3>SoftIt</h3>
+                <p class="project-description">This is a personal project for my fullstack coding bootcamp. Is working
+                    in progress. I have made the design with FIGMA.</p>
+                <hr />
+                <p class="project-description"><a class="project-link" target="_blank"
+                        href="https://github.com/LNCE21">View Code</a></p>
+            </div>
+
+            <div class="project-card">
+                <a href="https://lnce21.github.io/travelAgency/" target="_blank">
+                    <img class="project-img-2" class="project-img" src="src/images/project-3.png" alt="Project 3">
+                </a>
+                <h3>Travel</h3>
+                <p class="project-description">This landing page is a Minimal Viable Product for a travel agency made
+                    for practice my Flexbox and SCSS skills.</p>
+                <hr />
+                <p class="project-description">
+                    <a class="project-link" target="_blank" href="https://github.com/LNCE21/travelAgency">View Code
+                    </a>
+                </p>
+            </div>
+        </div>
+    </section>
+    <!--Links to the Javascript file-->
+    <script src="src/app.js"></script>
+</body>
+<!--Here starts the contact section on the footer-->
+<footer id="contact">
+    <div class="title">
+        <h2>Contact me</h2>
+    </div>
+    <div>
+        <p>Find me on the following socials</p>
+    </div>
+    <div class="socials-buttons">
+        <div class="socials-footer">
+            <div><a target="_blank" href="https://www.linkedin.com/in/lautaro-nicolas-clerici-erhardt-69b021216/"><img
+                        class="linkedin" src="src/images/linkedin.png" alt="My LinkedIn Profile"></a></div>
+            <div><a target="_blank" href="https://github.com/LNCE21"><img class="github" src="src/images/github.png"
+                        alt="GitHub Account"></a></div>
+        </div>
+    </div>
+</footer>
+
 </html>
