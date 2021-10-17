@@ -560,6 +560,10 @@ footer{
         width: 60%;
     }
 
+    .view-code {
+        margin-left: em;
+        margin-bottom: -2em;
+    }
     
    
 }
