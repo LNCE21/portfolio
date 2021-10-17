@@ -17,17 +17,17 @@ section {
 nav{
     display: flex; /*Because i want that the elements appear on one line rather than stack*/
     justify-content: space-between; /*For separate the logo (on the left) and the rest (on the right)*/
-    padding-left:35px;
-    padding-right: 35px;
+    padding-left:2.10rem;
+    padding-right: 2.10rem;
     color: #8EE3C8;
 }
 
 .logo{
     color: #ffffff;
     font-size: 25px;
-    padding-top: 15px; /*To match the margin top of the li items, those have space evenly, that's why have spacing on the top*/
-    height: 50px;
-    width: 50px;
+    padding-top: 0.90rem; /*To match the margin top of the li items, those have space evenly, that's why have spacing on the top*/
+    height: 3rem;
+    width: 3rem;
 }
 
 ul{
@@ -35,7 +35,7 @@ ul{
     list-style-type: none; /*To get rid of the bullet points of the links (home-about etc)*/
     width: 500px;
     justify-content: space-evenly; /*Space evenly = Same spacing before, between and after the elements/ Space around= Half space before and after, and in between the same space*/
-    font-size: 0.74em;
+    font-size: 0.7em;
 }
 ul.show{
     display: block;
@@ -692,9 +692,7 @@ footer{
         background-color: transparent;
         color: #8EE3C8;
         font-size: 0.9em;
-        padding-bottom: 0.5em;
-        
-        
+        padding-bottom: 0.8em;
     }
     .hamburger:focus{
         outline: 0;
