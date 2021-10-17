@@ -609,7 +609,7 @@ footer{
     
     /*Here starts the project Section*/
     #project-section{
-        height: 100vh;
+        height: 100%;
     }
     .project-column{        
         padding-top: 2.5em;
