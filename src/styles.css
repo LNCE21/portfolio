@@ -634,7 +634,7 @@ footer{
 }
 
 
-@media only screen and (max-width:1150px) { /*Anything equal or bellow 1000px will have the following styling*/
+@media only screen and (max-width:96.875em) { /*Anything equal or bellow 1550px will have the following styling*/
 
     .build{
         font-size: 0.7em;
